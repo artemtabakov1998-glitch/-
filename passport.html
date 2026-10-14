@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Изменяем кириллицу на латиницу по клику</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+<h2>Меню</h2>
+<ul>
+<li><a href="index.html">Главная</a></li>
+<li><a href="info.html">Основные понятия</a></li>
+<li><a href="gallery.html">Картинки</a></li>
+<li><a href="table.html">Таблица</a></li>
+<li><a href="materials.html">Материалы</a></li>
+<li><a href="form.html">Формы</a></li>
+<li><a href="passport.html" class="active" aria-current="page">Паспорт</a></li>
+<li><a href="DOM.html">Считывание из DOM</a></li>
+<li><a href="task.html">Задача № 1008</a></li>
+<li><a href="info.html#homeomorphism">Что такое гомеоморфизм?</a></li>
+<li><a href="https://www.hse.ru/" target="_blank" rel="noopener">Сайт ВШЭ</a></li>
+</ul>
+<a href="index.html"><img src="images/klein.png" width="60" alt="На главную"></a>
+<hr>
+<h1>Изменяем кириллицу на латиницу по клику</h1>
+<p>Учебный макет. Фото условное, сведения о выдаче вымышлены.</p>
+<div class="passport">
+<h2>Российская Федерация</h2>
+<p>Паспорт выдан: УЧЕБНЫМ ОТДЕЛОМ ГОРОДА N</p>
+<p>Дата выдачи: 20.03.2022</p><p>Код подразделения: 000-000</p>
+<p>Серия и номер: 0000 000000</p>
+<hr>
+<img class="passport-photo" src="images/photo.png" width="110" alt="Условное фото для учебного макета">
+<p>Фамилия: <span id="surname">Табаков</span></p>
+<p>Имя: <span id="first-name">Артём</span></p>
+<p>Отчество: <span id="patronymic">Владимирович</span></p>
+<p>Пол: <span id="sex">МУЖ.</span></p>
+<p>Дата рождения: 11.02.<span id="birth-year">2008</span></p>
+<p>Место рождения: ГОРОД N</p>
+<div class="clear"></div>
+</div><p><button id="change" type="button">Кириллица / латиница</button></p>
+<p><a href="#top">К началу страницы</a></p>
+<hr>
+<p>Табаков Артём Владимирович, БМТ 255. Учебный проект.</p>
+<script src="scripts/passport.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Решение алгоритмической задачи № 1008</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+<h2>Меню</h2>
+<ul>
+<li><a href="index.html">Главная</a></li>
+<li><a href="info.html">Основные понятия</a></li>
+<li><a href="gallery.html">Картинки</a></li>
+<li><a href="table.html">Таблица</a></li>
+<li><a href="materials.html">Материалы</a></li>
+<li><a href="form.html">Формы</a></li>
+<li><a href="passport.html">Паспорт</a></li>
+<li><a href="DOM.html">Считывание из DOM</a></li>
+<li><a href="task.html" class="active" aria-current="page">Задача № 1008</a></li>
+<li><a href="info.html#homeomorphism">Что такое гомеоморфизм?</a></li>
+<li><a href="https://www.hse.ru/" target="_blank" rel="noopener">Сайт ВШЭ</a></li>
+</ul>
+<a href="index.html"><img src="images/klein.png" width="60" alt="На главную"></a>
+<hr>
+<h1>Решение алгоритмической задачи № 1008</h1>
+<p>Имеются две ёмкости: кубическая с ребром A, цилиндрическая с высотой H и радиусом основания R. Определить, можно ли заполнить жидкостью объёма M первую ёмкость, вторую, обе.</p>
+<p>Размеры задаются в сантиметрах, объём жидкости — в см³. Под заполнением обеих понимается заполнение двух ёмкостей одновременно из общего запаса M.</p>
+<p>Объёмы: V₁ = A³, V₂ = πR²H. Остаток жидкости допускается.</p>
+<form id="task-form" action="https://httpbin.org/get" method="get" target="_blank">
+<input type="hidden" name="task_number" value="1008">
+<input type="hidden" name="formulation" value="Можно ли заполнить жидкостью объёма M куб с ребром A, цилиндр с высотой H и радиусом R, обе ёмкости?">
+<p><label>A: <input id="a" name="A" type="number" step="any" min="0" value="2" required></label></p>
+<p><label>H: <input id="h" name="H" type="number" step="any" min="0" value="1" required></label></p>
+<p><label>R: <input id="r" name="R" type="number" step="any" min="0" value="1" required></label></p>
+<p><label>M: <input id="m" name="M" type="number" step="any" min="0" value="12" required></label></p>
+<p><button id="calculate" type="button">Рассчитать</button></p>
+<p><label>Результат:<br><textarea id="result" name="result" rows="7" cols="60" readonly></textarea></label></p>
+<button type="submit">Рассчитать и отправить на сервер</button>
+</form>
+<p>Сервер httpbin.org показывает полученные условие, значения и ответ; результаты не сохраняются как заявки.</p>
+<p><a href="#top">К началу страницы</a></p>
+<hr>
+<p>Табаков Артём Владимирович, БМТ 255. Учебный проект.</p>
+<script src="scripts/task.js"></script>
+</body>
+</html>
