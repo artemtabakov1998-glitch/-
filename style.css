@@ -1,7 +1,7 @@
-a.active { background-color: yellow; }
-a:hover { color: red; }
+body > ul a { color: black; }
+a.active { font-weight: bold; }
 .surfaces { background-image: url("meme.png"); background-size: cover; }
 .surfaces th, .surfaces td { background-color: rgba(255,255,255,0.85); }
-.passport-page { background-color: #fff0eb; border: 1px solid black; width: 500px; padding: 15px; margin-top: 10px; }
+.passport-page { border: 1px solid black; width: 500px; padding: 15px; margin-top: 10px; }
 .photo { float: left; margin-right: 20px; }
 .big-image { display: block; margin: 30px auto; width: 600px; height: 400px; object-fit: contain; }
