@@ -1,10 +1,13 @@
-// Меняем текст существующих элементов страницы.
 let latin = false;
-document.getElementById('change').addEventListener('click', function () {
+
+function changePassport() {
     latin = !latin;
-    document.getElementById('surname').textContent = latin ? 'Tabakov' : 'Табаков';
-    document.getElementById('first-name').textContent = latin ? 'Artem' : 'Артём';
-    document.getElementById('patronymic').textContent = latin ? 'Vladimirovich' : 'Владимирович';
-    document.getElementById('sex').textContent = latin ? 'M' : 'МУЖ.';
-    // Год записан цифрами: при транслитерации он не меняется.
-});
+    document.getElementById('surname').innerText = latin ? 'Tabakov' : 'Табаков';
+    document.getElementById('first-name').innerText = latin ? 'Artem' : 'Артём';
+    document.getElementById('patronymic').innerText = latin ? 'Vladimirovich' : 'Владимирович';
+    document.getElementById('sex').innerText = latin ? 'Male.' : 'МУЖ.';
+    document.getElementById('issued').innerText = latin ? 'UMVD ROSSII PO OBLASTI N' : 'УМВД РОССИИ ПО ОБЛАСТИ N';
+    document.getElementById('birthplace').innerText = latin ? 'G.N' : 'Г.N';
+}
+
+document.getElementById('change').addEventListener('click', changePassport);
